@@ -1,0 +1,57 @@
+> Book room 101 for guest 1 (2 nights, 2 persons)
+  Booking 1 confirmed for Kairava Rora in room 101.
+  OK
+> Book room 101 for guest 2 (already occupied)
+  Room unavailable: Room 101 is already occupied.
+> Book room 102 for guest 3 (4 persons)
+  Booking rule error: Room 102 (Standard) allows at most 2 guests.
+> Book suite 301 for guest 2 (3 nights, 4 persons)
+  Booking 2 confirmed for Riya Sharma in room 301.
+  OK
+> Add dinner to booking 2
+  Added 'Room Service Dinner' to booking 2.
+  OK
+> Add laundry to booking 2
+  Added 'Laundry' to booking 2.
+  OK
+> Occupancy report
+  Grand Residency - Occupancy: 2 of 4 rooms (50.00%)
+  Room 101 | Standard | Rs. 2000.00 | Max guests 2 | Occupied
+  Room 102 | Standard | Rs. 2000.00 | Max guests 2 | Vacant
+  Room 201 | Deluxe | Rs. 3500.00 | Max guests 3 | Vacant
+  Room 301 | Suite | Rs. 6000.00 | Max guests 5 | Occupied
+  OK
+> Check out booking 1
+  ========== BILL ==========
+  Booking   : 1
+  Guest     : Kairava Rora (Regular)
+  Room      : 101 (Standard)
+  Stay      : 2 night(s) x Rs. 2000.00 = Rs. 4000.00
+  Services  : none
+  Subtotal  : Rs. 4000.00
+  Discount  : Rs. 0.00 (0%)
+  GST (12%) : Rs. 480.00
+  TOTAL     : Rs. 4480.00
+  OK
+> Check out booking 2
+  ========== BILL ==========
+  Booking   : 2
+  Guest     : Riya Sharma (Gold)
+  Room      : 301 (Suite)
+  Stay      : 3 night(s) x Rs. 6000.00 = Rs. 18000.00
+  Services  :
+    - Room Service Dinner : Rs. 1800.00
+    - Laundry : Rs. 600.00
+  Subtotal  : Rs. 20400.00
+  Discount  : Rs. 2040.00 (10%)
+  GST (12%) : Rs. 2203.20
+  TOTAL     : Rs. 20563.20
+  OK
+> Check out booking 1 again
+  Booking rule error: Booking 1 is already closed.
+> Book room 201 for unknown guest 9
+  Error: Guest 9 not found.
+> Book room 201 for guest 3 for 0 nights
+  Error: Number of nights must be positive.
+
+Total bookings created: 2
